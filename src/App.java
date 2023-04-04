@@ -7,8 +7,23 @@
 * Github: https://github.com/AdamSulan/testterfogat.git
 * Licenc: GNU GPL
 */
-public class App {
+
+import controllers.MainController;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class App extends Application{
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        MainController mainController=new MainController();
+        Scene scene = new Scene(mainController.getMainPanel(),400,300);
+        stage.setScene(scene);
+        stage.show();        
+        
     }
 }

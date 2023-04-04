@@ -31,7 +31,7 @@ public class MainPanel extends VBox {
         this.titlePanel.setText("Kocka térfogata");
         this.spaceDiagonalPanel.setText("A kocka testátlója");
         this.buttonPanel.setCalcButtonText("Számít");
-        this.volumePanel.setText("Terület");
+        this.volumePanel.setText("Térfogat");
 
         this.getChildren().add(this.titlePanel);
         this.getChildren().add(this.spaceDiagonalPanel);
