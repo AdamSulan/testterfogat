@@ -17,6 +17,7 @@ import com.github.suli2022.inputlib.TitlePanel;
 import javafx.scene.layout.VBox;
 
 public class MainPanel extends VBox {
+    TitlePanel adatok;
     TitlePanel titlePanel;
     InputPanel spaceDiagonalPanel;
     ButtonPanel buttonPanel;
@@ -27,16 +28,19 @@ public class MainPanel extends VBox {
         this.spaceDiagonalPanel=new InputPanel();
         this.buttonPanel=new ButtonPanel();
         this.volumePanel=new InputPanel();
+        this.adatok=new TitlePanel();
 
         this.titlePanel.setText("Kocka térfogata");
         this.spaceDiagonalPanel.setText("A kocka testátlója");
         this.buttonPanel.setCalcButtonText("Számít");
         this.volumePanel.setText("Térfogat");
+        this.adatok.setText("Sulan Ádám, SZOFT I-1-N, 2023.04.04.");
 
         this.getChildren().add(this.titlePanel);
         this.getChildren().add(this.spaceDiagonalPanel);
         this.getChildren().add(this.buttonPanel);
         this.getChildren().add(this.volumePanel);
+        this.getChildren().add(this.adatok);
     }
     
     public TitlePanel getTitlePanel() {

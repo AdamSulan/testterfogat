@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 public class App extends Application{
     public static void main(String[] args) throws Exception {
+        System.out.println("Sulan Ádám, SZOFT I-1-N, 2023.04.04.");
         launch(args);
     }
 
